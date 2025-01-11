@@ -14,6 +14,7 @@ import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 
 export default function BookPage() {
+    
     const searchParams = useSearchParams()
     const index = searchParams.get('index')
     if (!index) {
