@@ -49,7 +49,7 @@ export default function BookSearch() {
       return;
     }
     setLoading(true);
-    axios.post("http://localhost:8000/search", {
+    axios.post(`${API_URL}/search`, {
       "query": searchQuery,
       "max_results": 20
     }).then((res) => {
